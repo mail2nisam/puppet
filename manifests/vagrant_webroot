@@ -8,3 +8,26 @@
     Allow from all
   </Directory>
 </VirtualHost>
+<VirtualHost *:80>
+  ServerName sakani-beta.dev
+  ServerAlias www.sakani-beta.dev
+  DocumentRoot /vagrant/webroot/sakani_beta/public
+  <Directory /vagrant/webroot/sakani_beta/public>
+    
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>
+
+<VirtualHost *:80>
+  ServerName panel.sakani-beta.dev
+  DocumentRoot /vagrant/webroot/sakani_beta_panel/public
+  <Directory /vagrant/webroot/sakani_beta_panel/public>
+    
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>
+

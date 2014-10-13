@@ -4,7 +4,9 @@ class tools {
   $packages = [
     "curl",
     "vim",
-    "htop"
+    "htop",
+    "imagemagick",
+    "php5-imagick"
   ]
 
   # install packages
